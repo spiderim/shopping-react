@@ -20,17 +20,17 @@ function App() {
     <NavBar/>
       <HashRouter basename='/shopping-react'>
         <Switch>
-          <Route path="/" component={AppClass}exact/>
-          <Route path="/second" component={SideNav}/>
-          <Route path="/additem" component={AddItem}/>
-          <Route path="/signup" component={Signup}/>
-          <Route path="/ret_order" component={RetailerOrder}/>
-          <Route path="/cust_order" component={CustomerOrder}/>
-          <Route path="/order/:id/:addr" component={Order}/>
-          <Route path="/item_info/:id/:addr" component={ItemInfo}/>
-          <Route path="/ret_info" component={RetailerInfo}/>
-          <Route path="/cust_info" component={CustomerInfo}/>
-          <Route path="/cust_cart" component={CustomerCart}/>
+          <Route path="/" exact component={AppClass}/>
+          <Route path="/second" exact component={SideNav}/>
+          <Route path="/additem"  exact component={AddItem}/>
+          <Route path="/signup" exact component={Signup}/>
+          <Route path="/ret_order" exact component={RetailerOrder}/>
+          <Route path="/cust_order" exact component={CustomerOrder}/>
+          <Route path="/order/:id/:addr" exact component={Order}/>
+          <Route path="/item_info/:id/:addr" exact component={ItemInfo}/>
+          <Route path="/ret_info" exact component={RetailerInfo}/>
+          <Route path="/cust_info" exact component={CustomerInfo}/>
+          <Route path="/cust_cart" exact component={CustomerCart}/>
 
           
         </Switch>
