@@ -84,7 +84,7 @@ class CustomerCart extends Component{
   
     
   <div style={{float:"left"}}>
-  <Link style={{ textDecoration: 'none' }} to={`/shopping-react/order/${item.itemId}/${item.addrRetailer}`} key={item.itemId}>
+  <Link style={{ textDecoration: 'none' }} to={`/order/${item.itemId}/${item.addrRetailer}`} key={item.itemId}>
    <Card.Img style={{height:"200px"}} variant="top" src={item.imgLink} />
    
     <Card.Body>
@@ -98,7 +98,7 @@ class CustomerCart extends Component{
     </Card.Body>
     </Link>
     <Card.Footer >
-      <Link to={`/shopping-react/order/${item.itemId}/${item.addrRetailer}`}><Button variant="success" >Order</Button></Link><Button variant="danger"  onClick={this.deleteSpecificCache(item.addrRetailer+"/"+item.itemId)}>Remove from Cart</Button>
+      <Link to={`/order/${item.itemId}/${item.addrRetailer}`}><Button variant="success" >Order</Button></Link><Button variant="danger"  onClick={this.deleteSpecificCache(item.addrRetailer+"/"+item.itemId)}>Remove from Cart</Button>
     </Card.Footer>
   
 

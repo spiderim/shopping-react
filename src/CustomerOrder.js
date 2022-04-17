@@ -108,7 +108,7 @@ class CustomerOrder extends Component{
             
 
             <div style={{backgroundColor:order.orderStatus=="6" || order.orderStatus=="5"?'#D5FEB6':order.orderStatus=='3'?'#A1FCD3':order.orderStatus=="4"?'#FCAEA8':'#A1CDFC',margin:"10px 10px 10px 10px"}} key={order.orderId}>
-              <Link style={{textDecoration: "none",color:"black",textAlign:"left"}} to={`/shopping-react/order/${order.itemId}/${order.addrRetailer}`}>
+              <Link style={{textDecoration: "none",color:"black",textAlign:"left"}} to={`/order/${order.itemId}/${order.addrRetailer}`}>
             
               <Button style={{width:"100%"}}>Go to Item</Button>
               </Link>

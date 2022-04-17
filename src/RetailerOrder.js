@@ -78,7 +78,7 @@ class RetailerOrder extends Component{
         <h2><b>My Orders</b></h2>
           {this.state.orders.slice().sort((a,b)=>a.orderId<b.orderId?1:-1).map(order=>(
             <div style={{backgroundColor:order.orderStatus=="6" || order.orderStatus=="5"?'#D5FEB6':order.orderStatus=='3'?'#A1FCD3':order.orderStatus=="4"?'#D87206':'#A1CDFC',margin:"10px 10px 10px 10px"}} key={order.orderId}>
-            <Link style={{textDecoration: "none",color:"black",textAlign:"left"}} to={`/shopping-react/order/${order.itemId}/${order.addrRetailer}`}>
+            <Link style={{textDecoration: "none",color:"black",textAlign:"left"}} to={`/order/${order.itemId}/${order.addrRetailer}`}>
             
               <Button style={{width:"100%"}}>Go to Item</Button>
               </Link>

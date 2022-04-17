@@ -147,7 +147,7 @@ class CustomerClass extends Component{
   
     
   <div style={{float:"left"}}  >
-  <Link style={{ textDecoration: 'none' }} to={`/shopping-react/order/${item.itemId}/${item.addrRetailer}`} key={item.itemId}>
+  <Link style={{ textDecoration: 'none' }} to={`/order/${item.itemId}/${item.addrRetailer}`} key={item.itemId}>
    <Card.Img style={{height:"200px"}} variant="top" src={item.imgLink} />
    
     <Card.Body>
