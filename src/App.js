@@ -18,22 +18,20 @@ function App() {
   return (
     <div className="App">
     <NavBar/>
-     
+ 
           <Route exact path="/" component={AppClass}/>
           <Route exact path="/second" component={SideNav}/>
           <Route exact path="/additem"  component={AddItem}/>
           <Route exact path="/signup" component={Signup}/>
           <Route exact path="/ret_order" component={RetailerOrder}/>
-          <Route exact path="/cust_order " component={CustomerOrder}/>
+          <Route exact path="/cust_order" component={CustomerOrder}/>
           <Route exact path="/order/:id/:addr"  component={Order}/>
           <Route exact path="/item_info/:id/:addr"  component={ItemInfo}/>
           <Route exact path="/ret_info"  component={RetailerInfo}/>
           <Route exact path="/cust_info"  component={CustomerInfo}/>
           <Route exact path="/cust_cart"  component={CustomerCart}/>
 
-          
-        
-      
+
     </div>
   );
 }
