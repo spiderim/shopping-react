@@ -92,7 +92,7 @@ class RetailerClass extends Component{
                 {this.state.items.slice().sort((a,b)=>a.itemId<b.itemId?1:-1).map(item=>(
                   <Col>
                   <Card >
-              <Link to={`/order/${item.itemId}/${item.addrRetailer}`} key={item.itemId}>
+              <Link to={`/shopping-react/order/${item.itemId}/${item.addrRetailer}`} key={item.itemId}>
               
   
     
@@ -108,7 +108,7 @@ class RetailerClass extends Component{
       </Card.Text>
     </Card.Body>
     <Card.Footer >
-      <Link to={`/item_info/${item.itemId}/${item.addrRetailer}`}><Button style={{width:"100%"}}>Update</Button></Link>
+      <Link to={`/shopping-react/item_info/${item.itemId}/${item.addrRetailer}`}><Button style={{width:"100%"}}>Update</Button></Link>
     </Card.Footer>
   
 

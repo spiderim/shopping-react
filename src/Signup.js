@@ -105,7 +105,7 @@ enterName=(event)=>{
   render(){
     return (
     <div className={styles.one_form}>
-    { this.state.redirect ? (<Redirect push to="/"/>) : null }  
+    { this.state.redirect ? (<Redirect push to="/shopping-react"/>) : null }  
 
     <form className={styles.form} onSubmit={this.onSubmit}>
       <h3 className={styles.form_title}>Signup</h3>

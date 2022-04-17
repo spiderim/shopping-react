@@ -20,17 +20,17 @@ function App() {
     <NavBar/>
       <BrowserRouter>
         <Switch>
-          <Route path="/" component={AppClass}exact/>
-          <Route path="/second" component={SideNav}/>
-          <Route path="/additem" component={AddItem}/>
-          <Route path="/signup" component={Signup}/>
-          <Route path="/ret_order" component={RetailerOrder}/>
-          <Route path="/cust_order" component={CustomerOrder}/>
-          <Route path="/order/:id/:addr" component={Order}/>
-          <Route path="/item_info/:id/:addr" component={ItemInfo}/>
-          <Route path="/ret_info" component={RetailerInfo}/>
-          <Route path="/cust_info" component={CustomerInfo}/>
-          <Route path="/cust_cart" component={CustomerCart}/>
+          <Route path="/shopping-react/" component={AppClass}exact/>
+          <Route path="/shopping-react/second" component={SideNav}/>
+          <Route path="/shopping-react/additem" component={AddItem}/>
+          <Route path="/shopping-react/signup" component={Signup}/>
+          <Route path="/shopping-react/ret_order" component={RetailerOrder}/>
+          <Route path="/shopping-react/cust_order" component={CustomerOrder}/>
+          <Route path="/shopping-react/order/:id/:addr" component={Order}/>
+          <Route path="/shopping-react/item_info/:id/:addr" component={ItemInfo}/>
+          <Route path="/shopping-react/ret_info" component={RetailerInfo}/>
+          <Route path="/shopping-react/cust_info" component={CustomerInfo}/>
+          <Route path="/shopping-react/cust_cart" component={CustomerCart}/>
 
           
         </Switch>

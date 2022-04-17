@@ -62,15 +62,15 @@ constructor(props){
     let templateRetailerOrder
       if(this.state.userExist){
         if(this.state.userType=="Customer"){
-          templateUserName=<div><Nav.Link href="/cust_info" style={{color:"#F20E91"}}>{this.state.userName}</Nav.Link></div> 
+          templateUserName=<div><Nav.Link href="/shopping-react/cust_info" style={{color:"#F20E91"}}>{this.state.userName}</Nav.Link></div> 
         }
         else{
-          templateUserName=<div><Nav.Link href="/ret_info" style={{color:"#F20E91"}}>{this.state.userName}</Nav.Link></div> 
+          templateUserName=<div><Nav.Link href="/shopping-react/ret_info" style={{color:"#F20E91"}}>{this.state.userName}</Nav.Link></div> 
         }
         
       }
       else{
-        templateUserName=<div > <Nav.Link href="/signup" style={{color:"#F20E91"}}>signup</Nav.Link></div>
+        templateUserName=<div > <Nav.Link href="/shopping-react/signup" style={{color:"#F20E91"}}>signup</Nav.Link></div>
       }
         
       
@@ -78,24 +78,24 @@ constructor(props){
       if(this.state.userExist && this.state.userType=="Customer"){
         templateUserType=
         <div >
-          <Nav.Link href="/cust_order" style={{color:"#F20E91"}}>My orders</Nav.Link>
+          <Nav.Link href="/shopping-react/cust_order" style={{color:"#F20E91"}}>My orders</Nav.Link>
         </div>
 
       }
       else if(this.state.userExist && this.state.userType=="Retailer"){
         templateUserType=
         <div>
-          <Nav.Link href="/additem" style={{color:"#F20E91"}}>Add Item</Nav.Link>
+          <Nav.Link href="/shopping-react/additem" style={{color:"#F20E91"}}>Add Item</Nav.Link>
         </div>
       }
 
       if(this.state.userExist && this.state.userType=="Retailer"){
-        templateRetailerOrder=<div style={{color:"#F20E91"}}><Nav.Link style={{color:"#22FC07"}} href="/ret_order">
+        templateRetailerOrder=<div style={{color:"#F20E91"}}><Nav.Link style={{color:"#22FC07"}} href="/shopping-react/ret_order">
             Orders
           </Nav.Link></div>
       }
       else if(this.state.userExist && this.state.userType=="Customer"){
-        templateRetailerOrder=<div style={{color:"#F20E91"}}><Nav.Link style={{color:"#F2F904"}} href="/cust_cart">
+        templateRetailerOrder=<div style={{color:"#F20E91"}}><Nav.Link style={{color:"#F2F904"}} href="/shopping-react/cust_cart">
             Cart
           </Nav.Link></div>
       }
@@ -126,7 +126,7 @@ constructor(props){
        {/*<Button variant="primary" onClick={this.handleShow}>Launch</Button>)*/}
 
 
-      <Navbar.Brand href="/" style={{color:"green"}}><b>Shopping</b></Navbar.Brand>
+      <Navbar.Brand href="/shopping-react" style={{color:"green"}}><b>Shopping</b></Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
